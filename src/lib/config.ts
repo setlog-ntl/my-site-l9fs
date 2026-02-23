@@ -59,7 +59,7 @@ function parseJSON<T>(raw: string | undefined, fallback: T): T {
 
 export const siteConfig = {
   name: process.env.NEXT_PUBLIC_SITE_NAME || '최동혁',
-  nameEn: process.env.NEXT_PUBLIC_SITE_NAME_EN || 'Jiwon Lee',
+  nameEn: process.env.NEXT_PUBLIC_SITE_NAME_EN || 'dong hyuck choi',
   tagline: process.env.NEXT_PUBLIC_TAGLINE || '한줄소개 내용',
   taglineEn: process.env.NEXT_PUBLIC_TAGLINE_EN || 'Creator who connects the world through content',
   heroImageUrl: process.env.NEXT_PUBLIC_HERO_IMAGE_URL || null,
@@ -82,7 +82,7 @@ export const siteConfig = {
   parallaxEnabled: true,
   fontFamily: 'Pretendard',
   galleryColumns: '3',
-  designPreset: 'storyteller',
+  designPreset: 'creator',
   gaId: process.env.NEXT_PUBLIC_GA_ID || null,
 };
 
