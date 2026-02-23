@@ -20,32 +20,32 @@ export interface SocialItem {
 
 const DEMO_VALUES: ValueItem[] = [
   {
-    emoji: '\\u2726',
-    title: '\\uC9C4\\uC815\\uC131',
+    emoji: '✦',
+    title: '진정성',
     titleEn: 'Authenticity',
-    desc: '\\uAD11\\uACE0\\uCC98\\uB7FC \\uB290\\uAEF4\\uC9C0\\uC9C0 \\uC54A\\uB294 \\uCF58\\uD150\\uCE20. \\uB0B4\\uAC00 \\uC9C1\\uC811 \\uC368\\uBD24\\uAC70\\uB098 \\uBFFF\\uB294 \\uAC83\\uB9CC \\uC774\\uC57C\\uAE30\\uD569\\uB2C8\\uB2E4.',
+    desc: '광고처럼 느껴지지 않는 콘텐츠. 내가 직접 써봤거나 뿿는 것만 이야기합니다.',
     
   },
   {
-    emoji: '\\u2726',
-    title: '\\uC77C\\uAD00\\uC131',
+    emoji: '✦',
+    title: '일관성',
     titleEn: 'Consistency',
-    desc: '2019\\uB144\\uBD80\\uD130 \\uD55C \\uC8FC\\uB3C4 \\uAC70\\uB974\\uC9C0 \\uC54A\\uC740 \\uB274\\uC2A4\\uB808\\uD130. \\uAFB8\\uC900\\uD568\\uC774 \\uC2E0\\uB8B0\\uB97C \\uB9CC\\uB4E0\\uB2E4\\uACE0 \\uC0DD\\uAC01\\uD574\\uC694.',
+    desc: '2019년부터 한 주도 거르지 않은 뉴스레터. 꾸준함이 신뢰를 만든다고 생각해요.',
     descEn: 'A newsletter published every single week since 2019. I believe consistency builds trust.',
   },
   {
-    emoji: '\\u2726',
-    title: '\\uD638\\uAE30\\uC2EC',
+    emoji: '✦',
+    title: '호기심',
     titleEn: 'Curiosity',
-    desc: '\\uC0C8\\uB85C\\uC6B4 \\uD50C\\uB7AB\\uD3FC, \\uC0C8\\uB85C\\uC6B4 \\uD3EC\\uB9F7, \\uC0C8\\uB85C\\uC6B4 \\uC0AC\\uB78C. \\uBC30\\uC6C0\\uC744 \\uBA48\\uCD94\\uC9C0 \\uC54A\\uB294 \\uAC83\\uC774 \\uC81C \\uC6D0\\uB3D9\\uB825\\uC785\\uB2C8\\uB2E4.',
-    descEn: 'New platforms, new formats, new people \\u2014 never stopping learning is what keeps me going.',
+    desc: '새로운 플랫폼, 새로운 포맷, 새로운 사람. 배움을 멈추지 않는 것이 제 원동력입니다.',
+    descEn: 'New platforms, new formats, new people — never stopping learning is what keeps me going.',
   }
 ];
 
 const DEMO_HIGHLIGHTS: HighlightItem[] = [
-  { label: '\\uAD6C\\uB3C5\\uC790 \\uD569\\uC0B0', labelEn: 'Total Subscribers', value: '84,000+', valueEn: '84,000+', },
-  { label: '\\uD611\\uC5C5 \\uBE0C\\uB79C\\uB4DC', labelEn: 'Brand Collabs', value: '120+', valueEn: '120+', },
-  { label: '\\uB274\\uC2A4\\uB808\\uD130 \\uC5F0\\uC18D \\uBC1C\\uD589', labelEn: 'Newsletter Streak', value: '312\\uC8FC', valueEn: '312 Weeks', }
+  { label: '구독자 합산', labelEn: 'Total Subscribers', value: '84,000+', valueEn: '84,000+', },
+  { label: '협업 브랜드', labelEn: 'Brand Collabs', value: '120+', valueEn: '120+', },
+  { label: '뉴스레터 연속 발행', labelEn: 'Newsletter Streak', value: '312주', valueEn: '312 Weeks', }
 ];
 
 function parseJSON<T>(raw: string | undefined, fallback: T): T {
@@ -58,9 +58,9 @@ function parseJSON<T>(raw: string | undefined, fallback: T): T {
 }
 
 export const siteConfig = {
-  name: process.env.NEXT_PUBLIC_SITE_NAME || 'uC774uC9C0uC6D0',
+  name: process.env.NEXT_PUBLIC_SITE_NAME || '최동혁',
   nameEn: process.env.NEXT_PUBLIC_SITE_NAME_EN || 'Jiwon Lee',
-  tagline: process.env.NEXT_PUBLIC_TAGLINE || 'uCF58uD150uCE20uB85C uC138uC0C1uC744 uC5F0uACB0uD558uB294 uD06CuB9ACuC5D0uC774uD130',
+  tagline: process.env.NEXT_PUBLIC_TAGLINE || '한줄소개 내용',
   taglineEn: process.env.NEXT_PUBLIC_TAGLINE_EN || 'Creator who connects the world through content',
   heroImageUrl: process.env.NEXT_PUBLIC_HERO_IMAGE_URL || null,
   story:
